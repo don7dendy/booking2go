@@ -21,16 +21,24 @@ export default class NavIndex extends Component {
           <Stack.Screen
             name="Detail"
             component={Detail}
-            option={{
+            options={{
               title:"Payment Details",
               headerStyle:{
-                backgroundColor: "#4974a5"
-              }
+                backgroundColor: '#4974a5',
+              },
+              headerTintColor:'#ffffff',
             }}
           />
           <Stack.Screen
             name="Tambah"
             component={Tambah}
+            options={{
+              title:"Tambah Data Tamu",
+              headerStyle:{
+                backgroundColor: '#4974a5',
+              },
+              headerTintColor:'#ffffff',
+            }}
           />
         </Stack.Navigator>
       </NavigationContainer>
